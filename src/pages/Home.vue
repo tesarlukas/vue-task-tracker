@@ -38,7 +38,6 @@ export default {
       return data;
     },
     async addTask(newTask) {
-      console.log(newTask);
       const res = await fetch('http://localhost:5002/tasks', {
         method: 'POST',
         headers: {

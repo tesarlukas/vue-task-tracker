@@ -5,6 +5,7 @@
       <div class="separator">|</div>
       <router-link to="/">Home</router-link>
       <router-link to="/about">About</router-link>
+      <router-link to="/focus">Focus</router-link>
     </nav>
     <router-view />
     <footer>This is footer</footer>
@@ -156,6 +157,10 @@ label {
 .form-control-check input {
   flex: 2;
   height: 20px;
+}
+
+.text-center {
+  text-align: center;
 }
 
 footer {
