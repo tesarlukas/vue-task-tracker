@@ -26,16 +26,16 @@ import Task from '../components/Task.vue';
 
 export default {
   name: 'Tasks',
-  components: {
-    Header,
-    AddTask,
-    Task,
-  },
   props: {
     tasks: {
       type: Array,
       default: [],
     },
+  },
+  components: {
+    Header,
+    AddTask,
+    Task,
   },
   data() {
     return {

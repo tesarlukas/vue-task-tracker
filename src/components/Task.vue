@@ -7,8 +7,16 @@
     <h3>
       {{ task.text }}
       <div>
-        <span @click="handleFocus(task)" style="color: blue">F</span>
-        <span @click="handleDelete(task.id)" style="color: red">X</span>
+        <i
+          class="fas fa-check"
+          style="color: blue"
+          @click="handleFocus(task)"
+        />
+        <i
+          class="fas fa-times"
+          style="color: red"
+          @click="handleDelete(task.id)"
+        />
       </div>
     </h3>
     <p>{{ task.day }}</p>
@@ -21,7 +29,6 @@ export default {
   props: {
     task: Object,
   },
-  created() {},
   methods: {
     handleDelete(id) {
       this.$emit('delete-task', id);
@@ -37,7 +44,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-span {
+i {
   margin-left: 5px;
 }
 </style>
