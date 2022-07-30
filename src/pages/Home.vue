@@ -1,8 +1,8 @@
 <template>
   <Tasks
+    @add-task="addTask"
     @delete-task="deleteTask"
     @toggle-reminder="toggleReminder"
-    @add-task="addTask"
     :tasks="tasks"
   />
 </template>

@@ -38,6 +38,7 @@ export default {
     },
     handleFocus(task) {
       this.$store.dispatch('setTask', task);
+      alert('Your focus has been set to this task');
     },
   },
 };

@@ -8,12 +8,16 @@
     <div v-else class="task text-center">
       <p>There is no task you are focused on</p>
     </div>
+    <NavButtons />
   </div>
 </template>
 
 <script>
+import NavButtons from '@/components/NavButtons.vue';
 import { mapGetters } from 'vuex';
+
 export default {
+  components: { NavButtons },
   name: 'Focus',
   computed: {
     ...mapGetters({ getTask: 'GET_TASK' }),
@@ -24,5 +28,9 @@ export default {
 <style lang="scss" scoped>
 .container {
   border: none;
+}
+
+.task {
+  margin: 20px 5px;
 }
 </style>
