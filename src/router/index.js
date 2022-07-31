@@ -2,6 +2,7 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 import Home from '../pages/Home.vue';
 import Focus from '../pages/Focus.vue';
+import Error from '../pages/Error.vue';
 
 Vue.use(VueRouter);
 
@@ -24,6 +25,11 @@ const routes = [
     path: '/focus',
     name: 'focus',
     component: Focus,
+  },
+  {
+    path: '*',
+    name: 'error',
+    component: Error,
   },
 ];
 
