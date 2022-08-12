@@ -27,7 +27,9 @@ export default {
 
 <style lang="scss" scoped>
 .container {
-  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .task {
