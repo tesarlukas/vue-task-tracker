@@ -3,6 +3,7 @@ import VueRouter from 'vue-router';
 import Home from '../pages/Home.vue';
 import Focus from '../pages/Focus.vue';
 import Error from '../pages/Error.vue';
+import About from '../pages/About.vue';
 
 Vue.use(VueRouter);
 
@@ -15,11 +16,7 @@ const routes = [
   {
     path: '/about',
     name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () =>
-      import(/* webpackChunkName: "about" */ '../pages/About.vue'),
+    component: About,
   },
   {
     path: '/focus',
